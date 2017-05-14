@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.0'
+
+    defaultConfig {
+        applicationId "net.gangpeng.pgq"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1001
+        versionName "1.0.0.1"
+    }
+
+    //解决包冲突问题
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    //签名设置
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'pgqzone'
+            keyPassword 'pgq123'
+            storeFile file('../pgq.jks')
+            storePassword 'pgq123'
+        }
+    }
+
+    //屏蔽lint错误提示
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        //release模式
+        release {
+            //不显示log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //添加签名
+            signingConfig signingConfigs.releaseConfig
+        }
+        //debug模式
+        debug {
+            //显示log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //添加签名
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+}
+
+greendao {
+    schemaVersion 3
+    daoPackage 'net.gangpeng.pgq.greendao'
+    targetGenDir 'src/main/java'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile project(':pgframe')
+    compile project(':mobsharelib')
+    compile project(':baidumaplib')
+    //注解依赖
+    compile 'com.jakewharton:butterknife:5.1.1'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //OkHttp
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    //greenDao
+    compile 'org.greenrobot:greendao:3.2.0'
+    // This is only needed if you want to use encrypted databases
+    compile 'net.zetetic:android-database-sqlcipher:3.5.4'
+    //eventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //以下三个依赖为测试内存泄露依赖库
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+}

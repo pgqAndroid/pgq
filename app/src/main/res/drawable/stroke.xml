@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+    <!--已适用放为准-->
+    <size
+        android:width="100dp"
+        android:height="100dp"/>
+
+    <corners android:radius="10dp"/>
+
+    <stroke
+        android:width="4dp"
+        android:color="@color/comm_gray"
+        android:dashGap="1dp"
+        android:dashWidth="10dp"/>
+
+    <solid android:color="@color/comm_white"/>
+</shape>

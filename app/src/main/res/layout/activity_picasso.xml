@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下图是根据ImageView大小，显示图片"/>
+
+            <ImageView
+                android:id="@+id/img_one"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下图是通过程序代码，来显示图片大小"/>
+
+            <ImageView
+                android:id="@+id/img_two"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载本地的图片"/>
+
+            <ImageView
+                android:id="@+id/img_three"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="截取图片"/>
+
+            <ImageView
+                android:id="@+id/img_four"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

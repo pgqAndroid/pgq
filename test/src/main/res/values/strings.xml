@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">test</string>
+    <!--首页-->
+    <string name="txt_home_community_tip">未选择社区</string>
+    <string name="txt_home_menu_home">首页</string>
+    <string name="txt_home_menu_type">分类</string>
+    <string name="txt_home_menu_recommend">周边</string>
+    <string name="txt_home_menu_mine">我的</string>
+
+    <!--我的-->
+    <string name="txt_mine_login">请点击登录</string>
+    <string name="txt_mine_attention">关注</string>
+    <string name="txt_mine_fans">粉丝</string>
+    <string name="txt_mine_community">社区</string>
+    <string name="txt_mine_friend">我的邻里圈</string>
+    <string name="txt_mine_phone">我的随手拍</string>
+    <string name="txt_mine_love">我的公益</string>
+    <string name="txt_mine_service">我的家政服务</string>
+    <string name="txt_mine_transaction">我的党员生活</string>
+    <string name="txt_mine_setting">设置</string>
+    <string name="txt_mine_about">关于智慧方兴</string>
+    <string name="txt_mine_help">帮助与反馈</string>
+    <string name="txt_share">推荐给好友</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="txt_other_friend">Ta的邻里圈</string>
+    <string name="txt_other_phone">Ta的随手拍</string>
+    <string name="txt_other_love">Ta的公益</string>
+    <string name="txt_other_service">Ta的家政服务</string>
+    <string name="txt_other_transaction">Ta的党员生活</string>
+    <string name="txt_mine_score">我的积分</string>
+    <string name="txt_mine_join">邀请好友赚积分</string>
+    <string name="txt_join_title">推荐给好友</string>
+
+    <!--实名认证-->
+    <string name="me_uncertify">未认证</string>
+    <string name="me_certify">已认证</string>
+    <string name="me_certifying">认证中</string>
+    <string name="txt_certify_name">真实姓名</string>
+    <string name="txt_certify_name_hint">输入姓名</string>
+    <string name="txt_certify_no">证件号码</string>
+    <string name="txt_certify_no_hint">输入身份证号码</string>
+    <string name="txt_certify_upload">证件上传</string>
+    <string name="txt_certify_upload_hint">上传身份证照片</string>
+    <string name="txt_certify_submit">提交认证</string>
+    <string name="txt_certify_agree">同意</string>
+    <string name="txt_certify_protocol"><u>《智慧社区用户须知》</u></string>
+    <string name="txt_certify_now">立即认证</string>
+    <string name="txt_certify_protocol_title">智慧社区用户须知</string>
+    <string name="txt_certify_uploading">请上传</string>
+    <string name="txt_certify_uploaded">已上传</string>
+    <string name="txt_certify_tip1">拍照时请手持身份证一起拍摄，并且要求：</string>
+    <string name="txt_certify_tip2">1、本人五官清晰、真实；</string>
+    <string name="txt_certify_tip3">2、身份证上证明信息清晰、真实；</string>
+    <string name="txt_certify_tip6">3、请脱掉帽子、眼镜等穿戴。</string>
+    <string name="txt_certify_tip4">我知道了</string>
+    <string name="txt_certify_tip5">注：请脱掉帽子、眼镜等穿戴。</string>
+    <string name="txt_certify_retake">重拍</string>
+    <string name="txt_certify_sure">确定</string>
+    <string name="txt_certify_success">提交成功，管理员将会尽快完成审核。</string>
+    <string name="txt_certify_complete">完成</string>
+    <string name="txt_certify_help">帮助</string>
+    <string name="txt_certify_success_title">实名认证成功</string>
+    <string name="txt_certify_pic">证件图片</string>
+    <string name="txt_certify_look">查看</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_add_account">AddAccountActivity</string>
+
+
+    <!-- 登陆 -->
+    <string name="txt_login_title">账号登录</string>
+    <string name="txt_login_register">注册</string>
+    <string name="txt_login_username">手机号码/身份证号码</string>
+    <string name="txt_login_pass">密码</string>
+    <string name="txt_login_btn">登录</string>
+    <string name="txt_login_forget">忘记密码?</string>
+    <string name="txt_login_remember_psd">记住密码</string>
+    <string name="txt_login_auto_login">自动登录</string>
+
+    <!-- 注册 -->
+    <string name="register_title">注册账号</string>
+    <string name="register_code">请输入验证码</string>
+    <string name="register_sendcode">发送验证码</string>
+    <string name="register_hintusername">填写中国大陆手机号，其他用户不可见</string>
+    <string name="register_hintpass">6-20位，建议数字、字母组合</string>
+    <string name="register_hintpass1">确认刚输入的密码</string>
+    <string name="register_re_hintpass">请再次输入密码</string>
+    <string name="register_btn">立即注册</string>
+    <string name="register_accept">我已阅读并同意</string>
+    <string name="register_protocol">《智慧社区用户协议》</string>
+    <string name="register_invite_txt">选填，输入好友邀请码，可获得奖励哦</string>
+
+    <!-- 忘记密码 -->
+    <string name="forget_title">找回密码</string>
+    <string name="forget_getcode">获取验证码</string>
+    <string name="forget_hinttelephone">请输入您的手机号</string>
+    <string name="forget_hintcode">请输入6位短信验证码</string>
+    <string name="forget_hintpass">请输入新密码，6-20位，建议数字、字母组合</string>
+    <string name="forget_re_hintpass">请再次输入新密码</string>
+    <string name="forget_btn">提交</string>
+    <string name="sms_resend">%1$s秒后重发</string>
+
+    <!--我的社区-->
+    <string name="txt_community_title">我的社区</string>
+    <string name="txt_community_add">添加社区</string>
+
+
+    <!-- 个人信息页面 -->
+    <string name="txt_person_info_title">个人信息</string>
+    <string name="txt_person_info_head">头像</string>
+    <string name="txt_person_info_nickname">昵称</string>
+    <string name="txt_person_info_gender">性别</string>
+    <string name="txt_person_info_telephone">手机号</string>
+    <string name="txt_person_info_address">地址</string>
+    <string name="txt_person_info_change_password">修改密码</string>
+    <string name="txt_person_info_certify">实名认证</string>
+    <string name="txt_party_info_certify">党员认证</string>
+    <string name="txt_person_info_exit">退出登录</string>
+    <string name="txt_submit">提交</string>
+    <string name="txt_person_info_determine">确定</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_change_head">修改头像</string>
+    <string name="txt_take_photo">拍照上传</string>
+    <string name="txt_select_photo_from_photo">上传手机上的照片</string>
+    <string name="txt_area">所在区/县：</string>
+    <string name="txt_street">所在街道：</string>
+    <string name="txt_zone">所在社区：</string>
+    <string name="txt_replace">更换</string>
+    <string name="toast_nickname_input">只能输入字母、数字、中文</string>
+
+    <!-- 搜索办事页面 -->
+    <string name="txt_search">搜索</string>
+    <string name="txt_recent_search">最近搜索</string>
+    <string name="txt_delete_history">清空历史记录</string>
+
+    <!--提示-->
+    <string name="txt_login_tip1">您可以浏览智慧方兴精彩内容</string>
+    <string name="txt_login_tip2">您可以随时建立圈子、发布话题、参加活动、预约服务</string>
+    <string name="txt_login_tip3">您可以直接在手机上进行相关政务事项办理、生活缴费等操作</string>
+
+    <!--关于-->
+    <string name="txt_about_title">关于</string>
+    <string name="txt_about_version">版本号：0.6.1</string>
+    <string name="txt_about_describe">&#160;&#160;&#160;&#160;&#160;&#160;“智慧方兴”移动APP是一款面向社区居民所打造的便民生活服务应用软件，由科大讯飞股份有限公司独立研发。旨在通过提供周边资讯推荐、邻里互动交流、公益活动参与、办事流程指导、交通出行规划等服务，将线上APP与线下服务相结合，打造一个开放、和谐、互助的掌上社区，成为中国领先的社区生活服务平台。</string>
+
+    <string name="tv_share_wx">分享到微信</string>
+    <string name="tv_share_qq">分享到QQ</string>
+    <string name="tv_share_sina">分享到微博</string>
+    <string name="tv_share_pyq">分享到微信朋友圈</string>
+    <string name="tv_share">分享</string>
+
+
+    <!--公交-->
+    <string name="txt_transit_title">智慧出行</string>
+    <string name="txt_my_location">我的位置</string>
+    <string name="txt_start_location">输入起点</string>
+    <string name="txt_end_location">输入终点</string>
+    <string name="txt_search_transit">查公交</string>
+    <string name="txt_search_subway">查地铁</string>
+    <string name="txt_no_open">暂未开放</string>
+
+    <string name="txt_search_by_map">地图选点</string>
+    <string name="txt_search_by_collect">收藏选点</string>
+
+    <string name="txt_home">家</string>
+    <string name="txt_company">公司</string>
+    <string name="txt_pick_point">地图选点</string>
+    <string name="search_no_result">暂无查询结果</string>
+    <string name="please_select_location">请选择地点</string>
+    <string name="please_input_start_location">输入起点</string>
+    <string name="please_input_end_location">输入终点</string>
+    <string name="please_input_location">输入地点</string>
+    <string name="please_input_busline">公交线路</string>
+    <string name="txt_delete_path_history">清除历史记录</string>
+    <string name="txt_search_result">查询结果</string>
+    <string name="kilometre">公里</string>
+    <string name="meter">米</string>
+    <string name="minute">分钟</string>
+
+    <string name="transit_route_start">从%1$s</string>
+    <string name="transit_route_end">到%1$s</string>
+    <string name="txt_nearby">在%1$s附近</string>
+    <string name="transit_result_count">为您找到%1$s个结果</string>
+    <string name="txt_notice">请打开GPS开关</string>
+    <string name="txt_gps_unwork">请打开GPS开关，即可获得精准的定位服务.</string>
+    <string name="txt_no_notice">不再显示此内容</string>
+    <string name="txt_open">开启</string>
+    <string name="too_near">起终点太近，自动规划步行路径</string>
+    <string name="not_support_bus_2city">不支持跨城市公交</string>
+    <string name="not_support_bus">该城市不支持公交搜索</string>
+    <string name="txt_sure">确定</string>
+    <string name="me_set">设置</string>
+
+
+    <string name="ambiguous_keyword_start">起点检索词有歧义</string>
+    <string name="ambiguous_keyword_end">终点检索词有歧义</string>
+    <string name="ambiguous_roure_addr_start">>起点检索地址有歧义</string>
+    <string name="ambiguous_roure_addr_end">>终点检索地址有歧义</string>
+    <string name="ambiguous_keyword">地点检索词有歧义</string>
+    <string name="ambiguous_roure_addr">>地点检索地址有歧义</string>
+    <string name="pull_to_refresh_refreshing_label">加载中…</string>
+
+    <string name="business_location_title">商家位置</string>
+    <string name="txt_join_txt">亲，好友注册时输入您的邀请码，好友注册成功后，您即可获得相应额度的积分奖励喔~~</string>
+
+</resources>

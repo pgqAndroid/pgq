@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+
+    <!--目测无效-->
+    <padding
+        android:left="10dp"
+        android:top="10dp"/>
+
+    <!--type 有line、radial、sweep-->
+    <gradient
+        android:angle="0"
+        android:centerColor="@color/comm_gray"
+        android:endColor="@color/comm_black"
+        android:startColor="@color/comm_white"
+        android:type="sweep"/>
+
+</shape>

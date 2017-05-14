@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:pgq="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        pgq:etHint="请输入经度"
+        pgq:inputType="8194"
+        pgq:tv="经度"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        pgq:etHint="请输入纬度"
+        pgq:inputType="8194"
+        pgq:tv="纬度"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_address"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        pgq:etHint="请输入名称"
+        pgq:inputType="1"
+        pgq:tv="名称"/>
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/green"
+        android:text="查询"/>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

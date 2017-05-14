@@ -1,0 +1,1 @@
+include ':app', ':pgframe', ':test', ':mobsharelib', ':baidumaplib', ':ipc'

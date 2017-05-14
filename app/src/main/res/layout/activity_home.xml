@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_share"
+            style="@style/TextBtn"
+            android:text="分享"/>
+
+        <TextView
+            android:id="@+id/tv_map"
+            style="@style/TextBtn"
+            android:text="地图"/>
+
+        <TextView
+            android:id="@+id/tv_recycler"
+            style="@style/TextBtn"
+            android:text="RecyclerView"/>
+
+        <TextView
+            android:id="@+id/tv_view"
+            style="@style/TextBtn"
+            android:text="view"/>
+
+        <TextView
+            android:id="@+id/tv_state_bar"
+            style="@style/TextBtn"
+            android:text="stateBar"/>
+
+        <TextView
+            android:id="@+id/tv_html"
+            style="@style/TextBtn"
+            android:text="html"/>
+
+        <TextView
+            android:id="@+id/tv_picasso"
+            style="@style/TextBtn"
+            android:text="picasso"/>
+
+        <TextView
+            android:id="@+id/tv_okhttp"
+            style="@style/TextBtn"
+            android:text="OkHttp"/>
+
+        <TextView
+            android:id="@+id/tv_greenDao"
+            style="@style/TextBtn"
+            android:text="greenDao"/>
+
+        <TextView
+            android:id="@+id/tv_eventBus"
+            style="@style/TextBtn"
+            android:text="eventBus"/>
+
+        <TextView
+            android:id="@+id/tv_drawable"
+            style="@style/TextBtn"
+            android:text="drawable"/>
+    </LinearLayout>
+</ScrollView>

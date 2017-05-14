@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_whole"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:pgq="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_left"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        pgq:tv="left:"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_top"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        pgq:tv="top:"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_right"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        pgq:tv="right:"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        pgq:tv="bottom:"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_x"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        pgq:tv="x:"/>
+
+    <net.gangpeng.pgq.view.TextEditLayout
+        android:id="@+id/te_y"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        pgq:tv="y:"/>
+
+    <TextView
+        android:id="@+id/tv_param1"
+        style="@style/TextBtn"
+        android:background="@color/green_dark"
+        android:text="padding: 10"/>
+
+    <TextView
+        android:id="@+id/tv_param2"
+        style="@style/TextBtn"
+        android:layout_margin="10dp"
+        android:background="@color/green_light"
+        android:text="padding: 10, margin: 10"/>
+
+
+</LinearLayout>

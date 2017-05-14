@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_scroll"
+        style="@style/TextBtn"
+        android:text="开始滑动"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <net.gangpeng.pgq.view.ScrollTextView
+            android:id="@+id/v_test_area2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_light"
+            android:gravity="center"
+            android:text="scroller滑动"/>
+
+        <TextView
+            android:id="@+id/tv_anim"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="动画滑动"/>
+
+        <TextView
+            android:id="@+id/tv_params"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="设置参数滑动"/>
+
+        <TextView
+            android:id="@+id/tv_anim_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="anim + scroll"/>
+
+        <TextView
+            android:id="@+id/tv_handler"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="tv_handler"/>
+
+        <TextView
+            android:id="@+id/tv_ObjectAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="tv_ObjectAnimation"/>
+
+        <TextView
+            android:id="@+id/tv_ValueAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="tv_ValueAnimation"/>
+
+        <TextView
+            android:id="@+id/tv_AnimationSet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green_dark"
+            android:gravity="center"
+            android:text="tv_AnimationSet"/>
+    </LinearLayout>
+
+</LinearLayout>

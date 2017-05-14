@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/setting_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        style="@style/mine_relative_icon"
+        android:src="@drawable/mine_icon_setting_01"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/mine_relative_txt"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="set"/>
+
+    <ImageView style="@style/mine_relative_go"/>
+</RelativeLayout>
