@@ -1,0 +1,20 @@
+<anims>
+    <anim name="0">
+        <frame num="1">
+            <icon>animation/sing01.jpg</icon>
+            <duration>300</duration>
+        </frame>
+        <frame num="2">
+            <icon>animation/sing02.jpg</icon>
+            <duration>300</duration>
+        </frame>
+        <frame num="3">
+            <icon>animation/sing03.jpg</icon>
+            <duration>300</duration>
+        </frame>
+        <frame num="4">
+            <icon>animation/sing04.jpg</icon>
+            <duration>300</duration>
+        </frame>
+    </anim>
+</anims>

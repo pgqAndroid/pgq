@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_param"
         style="@style/TextBtn"
-        android:text="params"/>
+        android:text="params" />
 
     <TextView
         android:id="@+id/tv_touch"
         style="@style/TextBtn"
-        android:text="touch"/>
+        android:text="touch" />
 
     <TextView
         android:id="@+id/tv_scroll"
         style="@style/TextBtn"
-        android:text="scroll"/>
+        android:text="scroll" />
 
     <TextView
         android:id="@+id/tv_merge"
         style="@style/TextBtn"
-        android:text="滑动冲突"/>
+        android:text="滑动冲突" />
 
     <TextView
         android:id="@+id/tv_custom_view"
         style="@style/TextBtn"
-        android:text="自定义控件"/>
+        android:text="自定义控件" />
+
+    <TextView
+        android:id="@+id/tv_frame_anim"
+        style="@style/TextBtn"
+        android:text="帧动画" />
 
 </LinearLayout>
