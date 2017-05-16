@@ -1,40 +1,40 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="net.gangpeng.pgq">
+<manifest package="net.gangpeng.pgq"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
 
     <!--百度地图 start-->
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
     <!-- 这个权限用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 这个权限用于访问GPS定位 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- 用于读取手机当前的状态 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!-- 访问网络，网络定位需要上网 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <!--百度地图 end-->
 
     <!--分享 start-->
-    <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <!-- 蓝牙分享所需的权限 -->
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <!--分享 end-->
 
     <application
@@ -49,139 +49,135 @@
         <!--百度地图key-->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="sGX7fCzfa3blSzrfO7vAFRfbfGzmsklu" />
+            android:value="sGX7fCzfa3blSzrfO7vAFRfbfGzmsklu"/>
 
         <!--欢迎页-->
         <activity
             android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <!--首页-->
         <activity
             android:name=".activity.HomeActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
 
         <!--百度地图相关activity-->
-        <activity android:name=".activity.map.MapIndexActivity" />
-        <activity android:name=".activity.map.LocationActivity" />
-        <activity android:name=".activity.map.SearchLocationActivity" />
-        <activity android:name=".activity.map.SpecialLocationActivity" />
+        <activity android:name=".activity.map.MapIndexActivity"/>
+        <activity android:name=".activity.map.LocationActivity"/>
+        <activity android:name=".activity.map.SearchLocationActivity"/>
+        <activity android:name=".activity.map.SpecialLocationActivity"/>
 
         <!--分享activity方式弹出框-->
         <activity
             android:name=".activity.ShareDialogActivity"
-            android:theme="@style/ActivityDialog" />
+            android:theme="@style/ActivityDialog"/>
 
         <!--状态栏-->
         <activity
             android:name=".activity.StateBarActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeNoBg" />
+            android:theme="@style/AppThemeNoBg"/>
 
         <!--RecyclerView-->
         <activity
             android:name=".activity.recycler.RecyclerViewIndexActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--RecyclerView仿listView-->
         <activity
             android:name=".activity.recycler.RecyclerListActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--RecyclerView仿girdView-->
         <activity
             android:name=".activity.recycler.RecyclerGirdActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--View相关-->
         <activity
             android:name=".activity.view.ViewActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--View params 相关-->
         <activity
             android:name=".activity.view.ViewParamActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--View params 相关-->
         <activity
             android:name=".activity.view.ViewTouchActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--View scroll 相关-->
         <activity
             android:name=".activity.view.ViewScrollActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--Html 相关-->
         <activity
             android:name=".activity.html.HtmlIndexActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--Html 原生js相关-->
         <activity
             android:name=".activity.html.HtmlJsActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--Html js bridge相关-->
         <activity
             android:name=".jsbridge.JsBridgeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--Html mui框架-->
         <activity
             android:name=".activity.html.HtmlMuiActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--picasso框架测试-->
         <activity
             android:name=".activity.PicassoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--okHttp测试-->
         <activity
             android:name=".activity.OkHttpActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--greenDao-->
         <activity
             android:name=".activity.green.GreenIndexActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--eventBus-->
         <activity
             android:name=".activity.eventbus.EventBusActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--eventBus-->
         <activity
             android:name=".activity.eventbus.EventBusMoreActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--view merge-->
         <activity
             android:name=".activity.view.ViewMergeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--自定义控件-->
         <activity
             android:name=".activity.view.CustomViewActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--自定义图片-->
         <activity
             android:name=".activity.DrawableActivity"
-            android:screenOrientation="portrait" />
-
-        <!--帧动画-->
-        <activity
-            android:name=".activity.view.FrameAnimActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!--分享 start-->
         <activity
@@ -192,17 +188,17 @@
             android:windowSoftInputMode="stateHidden|adjustResize">
 
             <intent-filter>
-                <data android:scheme="tencent1105524572" />
-                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="tencent1105524572"/>
+                <action android:name="android.intent.action.VIEW"/>
 
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
 
             <!-- 调用新浪原生SDK，需要注册的回调activity -->
             <intent-filter>
-                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <!--分享 end-->
@@ -211,7 +207,8 @@
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"></service>
+            android:process=":remote">
+        </service>
     </application>
 
 </manifest>
